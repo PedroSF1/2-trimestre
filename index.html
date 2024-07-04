@@ -53,10 +53,13 @@
             <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
             <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
         </section>
-        <section class="carrossel__titulo">Novos lançamentos</section>
+        <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
         <!-- Slider main container -->
 <div class="swiper">
     <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+
     <div class="swiper-pagination"></div>
 
     <div class="swiper-wrapper">
@@ -68,13 +71,38 @@
       <div class="swiper-slide"><img src="Portugol.svg" alt="Livro sobre portugol"></div>
       <div class="swiper-slide"><img src="Acessibilidade.svg" alt= "Livro sobre acessibilidade"></div>
     </div>
-    <!-- If we need pagination -->
+    
   
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   
 </div>
+
+<div class="card">
+    <!--1°linha-->
+    <div class="card__descrição">
+        <!--1°coluna-->
+        <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você também s interesse por...</h3>
+            <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
+            <p class="descrição__texto">Construindo uma aplicação integrada com a plataforma da Google.</p>
+        </div>
+        <!--2°coluna-->
+        <img src="Perfil-escritora 1-1.png" class="descrtição__imagem">
+    </div>
+
+
+    <!-- 2°linha-->
+    <div class="card__botões">
+        <ul class="botões">
+            <li class="botões__item"><img src="Favoritos.svg" alt="Favoritar livro"></li>
+            <li class="botões__item"><img src="Compras.svg"></li>
+        </ul>
+    </div>
+</div>
+
+    </section>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
             const swiper = new Swiper('.swiper', {
@@ -88,4 +116,4 @@
         </script>
     </body>
 
-</html> 
+</html>  
